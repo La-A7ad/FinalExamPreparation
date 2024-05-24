@@ -1,6 +1,4 @@
-I apologize for that mistake. Let's correct it and reformat the entire set of questions with the proper structure. 
 
-```markdown
 ### Question 1: Basic Syntax and Data Types
 *What will happen if we attempt to compile the following program?*
 
