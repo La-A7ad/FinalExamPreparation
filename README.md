@@ -1,4 +1,4 @@
-Sure! Here is the complete set of questions from 1 to 35, formatted in Markdown with the multiple-choice options displayed and the correct answers hidden using spoilers.
+I apologize for that mistake. Let's correct it and reformat the entire set of questions with the proper structure. 
 
 ```markdown
 ### Question 1: Basic Syntax and Data Types
@@ -391,11 +391,11 @@ int main() {
 }
 ```
 A. 0.0  
-B. 5.0
-
-  
+B. 5.0  
 C. Compilation error  
 D. Runtime error
+
+
 
 <details>
   <summary>Answer</summary>
@@ -854,10 +854,10 @@ C. `Item item();`
 D. `Item();`
 
 <details>
-  <summary>Answer
+  <summary>Answer</summary>
+  B. `Item item;
 
-</summary>
-  B. `Item item;`
+`
 </details>
 
 ### Question 28
@@ -1129,4 +1129,4 @@ D. Compilation error
 </details>
 ```
 
-You can copy and paste this content into an `.md` file to create a properly formatted Markdown document with spoilers hiding the answers.
+You can now copy and paste this content into an `.md` file to create a properly formatted Markdown document with spoilers hiding the answers.
