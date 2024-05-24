@@ -1109,5 +1109,76 @@ D. Compilation error
   B. 75
 </details>
 ```
+### Question 36: Initialization Lists
+*What will be the output of the following program?*
 
-You can now copy and paste this content into an `.md` file to create a properly formatted Markdown document with spoilers hiding the answers.
+```cpp
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    Rectangle(double l, double w) : length(l), width(w) {}
+
+    double getLength() const {
+        return length;
+    }
+
+    double getWidth() const {
+        return width;
+    }
+
+    double getArea() const {
+        return length * width;
+    }
+};
+
+int main() {
+    Rectangle rect(3.0, 4.0);
+    cout << "Length: " << rect.getLength() << endl;
+    cout << "Width: " << rect.getWidth() << endl;
+    cout << "Area: " << rect.getArea() << endl;
+    return 0;
+}
+```
+
+A. Length: 3.0 Width: 4.0 Area: 12.0  
+B. Length: 0.0 Width: 0.0 Area: 0.0  
+C. Compilation error due to initialization list  
+D. Runtime error
+
+<details>
+  <summary>Answer</summary>
+  A. Length: 3.0 Width: 4.0 Area: 12.0
+</details>
+
+### Question 37: Const Member Functions
+*Which of the following member functions is correctly defined as a const member function?*
+
+```cpp
+class Sample {
+private:
+    int value;
+
+public:
+    Sample(int v) : value(v) {}
+    int getValue() const {
+        return value;
+    }
+    void setValue(int v);
+};
+```
+A. `void setValue(int v) const { value = v; }`  
+B. `int getValue() { return value; }`  
+C. `int getValue() const { return value; }`  
+D. `void setValue(int v) const;`
+
+<details>
+  <summary>Answer</summary>
+  C. `int getValue() const { return value; }`
+</details>
+```
