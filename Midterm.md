@@ -1,3 +1,4 @@
+Sure, here are the midterm questions with the correct answers in spoilers:
 
 ```markdown
 ### Question 1: Basic Syntax and Data Types
@@ -19,6 +20,11 @@ int main() {
    B. A number will be printed.  
    C. A character will be printed.  
    D. None of the previous  
+
+<details>
+<summary>Answer</summary>
+C. A character will be printed.
+</details>
 
 ### Question 2: Application of Concepts - Predicting Outputs
 *What is the output of the following program if the user types "Hello, World!" and hits Enter, then types "C++ is fun" then hits Enter?*
@@ -45,6 +51,12 @@ int main() {
    D. s1 = Hello, World!  
       s2 = C++  
 
+<details>
+<summary>Answer</summary>
+D. s1 = Hello, World!  
+s2 = C++
+</details>
+
 ### Question 3: Operators
 ___ is the scope resolution operator and ___ is the "address of" operator.
 
@@ -52,6 +64,11 @@ ___ is the scope resolution operator and ___ is the "address of" operator.
    B. [], &  
    C. ::, &&  
    D. None of the previous  
+
+<details>
+<summary>Answer</summary>
+A. ::, &
+</details>
 
 ### Question 4: Increment and Decrement
 *What are the values of a, b, and c after the following statements are executed?*
@@ -66,6 +83,11 @@ int c = a * b++;
    B. a = 2, b = 6, c = 10  
    C. a = 2, b = 6, c = 13  
    D. a = 3, b = 6, c = 10  
+
+<details>
+<summary>Answer</summary>
+B. a = 2, b = 6, c = 10
+</details>
 
 ### Question 5: Structures
 *What is the output of the following program?*
@@ -99,6 +121,11 @@ int main() {
    C. p != q  
    D. Compilation error at line if (p == q)  
 
+<details>
+<summary>Answer</summary>
+D. Compilation error at line if (p == q)
+</details>
+
 ### Question 6: Structure Initialization
 *What is the output of the following program?*
 
@@ -127,6 +154,11 @@ int main() {
    C. Compilation error at line A a2 = {2, "hello"};  
    D. Compilation error at line A a4 = {4, 'B'};  
 
+<details>
+<summary>Answer</summary>
+D. Compilation error at line A a4 = {4, 'B'}
+</details>
+
 ### Question 7: Arrays
 *What is the output of the following code?*
 
@@ -148,6 +180,11 @@ int main() {
    C. Compilation error at line 7 due to array index overflow  
    D. None of the previous  
 
+<details>
+<summary>Answer</summary>
+D. None of the previous
+</details>
+
 ### Question 8: Arrays and Dimensions
 In C++, you can create arrays of ___ dimension(s).
 
@@ -155,6 +192,11 @@ In C++, you can create arrays of ___ dimension(s).
    B. only 1 and 2  
    C. only 1, 2, and 3  
    D. None of the previous  
+
+<details>
+<summary>Answer</summary>
+D. None of the previous
+</details>
 
 ### Question 9: Scope Resolution Operator
 *What is the output of the following program?*
@@ -182,6 +224,11 @@ int main() {
    C. Compilation error: Cannot have multiple variables with the same name.  
    D. BCBA  
 
+<details>
+<summary>Answer</summary>
+A. CABA
+</details>
+
 ### Question 10: Class and Object
 *What does the following program print on the screen?*
 
@@ -206,6 +253,11 @@ int main() {
    C. Compilation error at line 10 because name is public.  
    D. Compilation error at line 6 because the class has no constructors.  
 
+<details>
+<summary>Answer</summary>
+B. Compilation error at line 10 because name is private.
+</details>
+
 ### Question 11: Class Design
 **Write a class named Complex that represents a complex number with the following specifications:**
 
@@ -217,4 +269,4 @@ int main() {
 6. A method called add that takes one Complex object, adds it to the existing object and returns the result as a Complex object. If \( a + bi \) and \( c + di \) are two complex numbers, then their addition is \( (a+c) + (b+d)i \). (1 Point)
 ```
 
-You can copy and paste this content into an `.md` file to create a properly formatted Markdown document.
+You can copy and paste this content into an `.md` file to create a properly formatted Markdown document with the correct answers in spoilers.
