@@ -188,25 +188,6 @@ int main() {
 5. A public member function getCircumference that returns the circumference of the circle.
 6. Provide the implementation for each member function.
 
-<details>
-  <summary>Answer</summary>
-  ```cpp
-  class Circle {
-  private:
-      double radius;
-
-  public:
-      Circle() : radius(1.0) {}
-      Circle(double r) : radius(r) {}
-      double getArea() const {
-          return 3.14159 * radius * radius;
-      }
-      double getCircumference() const {
-          return 2 * 3.14159 * radius;
-      }
-  };
-  ```
-</details>
 
 ### Question 6: Constructor and Destructor
 *What is the output of the following program?*
