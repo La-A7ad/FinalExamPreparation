@@ -884,4 +884,8 @@ int main() {
    C. 100  
    D. Compilation error
 
->! Test 
+
+<details>
+  <summary>Answer</summary>
+  A. Hammer: 10 Wrench: 5 Pliers: 7
+</details>
