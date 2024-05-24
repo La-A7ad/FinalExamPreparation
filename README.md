@@ -1,11 +1,10 @@
-# FinalExamPreparation
+Certainly! Here's the formatted content suitable for an MD (Markdown) file:
 
-Sure, here are a series of exam questions based on the lecture "Introduction to Classes," following the patterns in exam questions as seen in the midterm:
-
+```markdown
 ### Question 1: Basic Syntax and Data Types
 *What will happen if we attempt to compile the following program?*
 
-cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -26,6 +25,7 @@ int main() {
     cout << "Area: " << rect.getArea() << endl;
     return 0;
 }
+```
 
    A. Compilation error due to missing constructor  
    B. A number will be printed  
@@ -35,7 +35,7 @@ int main() {
 ### Question 2: Application of Concepts - Predicting Outputs
 *What is the output of the following program?*
 
-cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -76,6 +76,7 @@ int main() {
     cout << "Area: " << rect.getArea() << endl;
     return 0;
 }
+```
 
    A. Length: 1.0 Width: 1.0 Area: 1.0  
    B. Length: 4.0 Width: 5.0 Area: 20.0  
@@ -85,7 +86,7 @@ int main() {
 ### Question 3: Understanding Access Specifiers
 *What will be the output of the following program if the constructor is correctly defined?*
 
-cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -120,6 +121,7 @@ int main() {
     cout << "Area: " << rect.getArea() << endl;
     return 0;
 }
+```
 
    A. Length: 3.0 Width: 4.0 Area: 12.0  
    B. Length: 3.0 Width: 4.0 Area: 7.0  
@@ -129,7 +131,7 @@ int main() {
 ### Question 4: Debugging Code
 *Identify the error in the following program and correct it.*
 
-cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -155,7 +157,7 @@ int main() {
     cout << "Area: " << rect.getArea() << endl;
     return 0;
 }
-
+```
 
 ### Question 5: Class Design and Member Functions
 **Design a class Circle with the following specifications:**
@@ -169,7 +171,7 @@ int main() {
 ### Question 6: Constructor and Destructor
 *What is the output of the following program?*
 
-cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -188,6 +190,7 @@ int main() {
     Test t;
     return 0;
 }
+```
 
    A. Constructor called  
    B. Destructor called  
@@ -198,7 +201,7 @@ int main() {
 **Given the following class specification in Rectangle.h, provide the implementation in Rectangle.cpp:**
 
 *Rectangle.h*
-cpp
+```cpp
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
@@ -217,7 +220,7 @@ public:
 };
 
 #endif
-
+```
 
 ### Question 8: Inline Member Functions
 *Explain the advantages and disadvantages of using inline member functions. Provide an example of when it would be appropriate to use an inline member function.*
@@ -225,7 +228,7 @@ public:
 ### Question 9: Arrays of Objects
 *What will be the output of the following program?*
 
-cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -255,10 +258,12 @@ int main() {
 
     return 0;
 }
+```
 
    A. Hammer: 10 Wrench: 5 Pliers: 7  
    B. Hammer: 10 Wrench: 5 Pliers: 0  
    C. Compilation error due to array initialization  
    D. Hammer: 10 Wrench: 5 Pliers: 7 plus additional uninitialized values
+```
 
-These questions cover the fundamental concepts of classes, the application of these concepts, and understanding object-oriented programming principles.
+You can copy and paste this content into an `.md` file to create a properly formatted Markdown document.
