@@ -226,30 +226,6 @@ public:
 };
 ```
 
-<details>
-<summary>Answer</summary>
-```cpp
-class Person {
-private:
-    string name;
-
-public:
-    Person() : name("") {}
-    void set_name(string n) { name = n; }
-    string get_name() const { return name; }
-};
-
-class Teacher : public Person {
-private:
-    string subject;
-
-public:
-    void set_subject(string s) { subject = s; }
-    string get_subject() const { return subject; }
-};
-```
-</details>
-
 ### Question 8: Inheritance and Access Specifiers
 *What is the output of the following program?*
 
