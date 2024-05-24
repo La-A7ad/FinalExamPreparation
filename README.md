@@ -1,4 +1,4 @@
-Certainly! Here's the formatted content suitable for an MD (Markdown) file:
+Sure! Here is the complete set of questions from 1 to 35, formatted in Markdown with the multiple-choice options displayed and the correct answers hidden using spoilers.
 
 ```markdown
 ### Question 1: Basic Syntax and Data Types
@@ -27,10 +27,15 @@ int main() {
 }
 ```
 
-   A. Compilation error due to missing constructor  
-   B. A number will be printed  
-   C. A character will be printed  
-   D. None of the previous
+A. Compilation error due to missing constructor  
+B. A number will be printed  
+C. A character will be printed  
+D. None of the previous
+
+<details>
+  <summary>Answer</summary>
+  B. A number will be printed
+</details>
 
 ### Question 2: Application of Concepts - Predicting Outputs
 *What is the output of the following program?*
@@ -78,10 +83,15 @@ int main() {
 }
 ```
 
-   A. Length: 1.0 Width: 1.0 Area: 1.0  
-   B. Length: 4.0 Width: 5.0 Area: 20.0  
-   C. Length: 4.0 Width: 5.0 Area: 9.0  
-   D. Compilation error due to private members
+A. Length: 1.0 Width: 1.0 Area: 1.0  
+B. Length: 4.0 Width: 5.0 Area: 20.0  
+C. Length: 4.0 Width: 5.0 Area: 9.0  
+D. Compilation error due to private members
+
+<details>
+  <summary>Answer</summary>
+  B. Length: 4.0 Width: 5.0 Area: 20.0
+</details>
 
 ### Question 3: Understanding Access Specifiers
 *What will be the output of the following program if the constructor is correctly defined?*
@@ -123,10 +133,15 @@ int main() {
 }
 ```
 
-   A. Length: 3.0 Width: 4.0 Area: 12.0  
-   B. Length: 3.0 Width: 4.0 Area: 7.0  
-   C. Length: 0.0 Width: 0.0 Area: 0.0  
-   D. Compilation error due to private members
+A. Length: 3.0 Width: 4.0 Area: 12.0  
+B. Length: 3.0 Width: 4.0 Area: 7.0  
+C. Length: 0.0 Width: 0.0 Area: 0.0  
+D. Compilation error due to private members
+
+<details>
+  <summary>Answer</summary>
+  A. Length: 3.0 Width: 4.0 Area: 12.0
+</details>
 
 ### Question 4: Debugging Code
 *Identify the error in the following program and correct it.*
@@ -159,6 +174,11 @@ int main() {
 }
 ```
 
+<details>
+  <summary>Answer</summary>
+  The code is correct. There is no error.
+</details>
+
 ### Question 5: Class Design and Member Functions
 **Design a class Circle with the following specifications:**
 1. Private member variables: radius (double).
@@ -167,6 +187,26 @@ int main() {
 4. A public member function getArea that returns the area of the circle.
 5. A public member function getCircumference that returns the circumference of the circle.
 6. Provide the implementation for each member function.
+
+<details>
+  <summary>Answer</summary>
+  ```cpp
+  class Circle {
+  private:
+      double radius;
+
+  public:
+      Circle() : radius(1.0) {}
+      Circle(double r) : radius(r) {}
+      double getArea() const {
+          return 3.14159 * radius * radius;
+      }
+      double getCircumference() const {
+          return 2 * 3.14159 * radius;
+      }
+  };
+  ```
+</details>
 
 ### Question 6: Constructor and Destructor
 *What is the output of the following program?*
@@ -192,10 +232,15 @@ int main() {
 }
 ```
 
-   A. Constructor called  
-   B. Destructor called  
-   C. Constructor called Destructor called  
-   D. No output
+A. Constructor called  
+B. Destructor called  
+C. Constructor called Destructor called  
+D. No output
+
+<details>
+  <summary>Answer</summary>
+  C. Constructor called Destructor called
+</details>
 
 ### Question 7: Separating Specification from Implementation
 **Given the following class specification in Rectangle.h, provide the implementation in Rectangle.cpp:**
@@ -222,8 +267,59 @@ public:
 #endif
 ```
 
+<details>
+  <summary>Answer</summary>
+  ```cpp
+  // Rectangle.cpp
+  #include "Rectangle.h"
+
+  Rectangle::Rectangle(double w, double l) : width(w), length(l) {}
+
+  void Rectangle::setWidth(double w) {
+      width = w;
+  }
+
+  void Rectangle::setLength(double l) {
+      length = l;
+  }
+
+  double Rectangle::getWidth() const {
+      return width;
+  }
+
+  double Rectangle::getLength() const {
+      return length;
+  }
+
+  double Rectangle::getArea() const {
+      return width * length;
+  }
+  ```
+</details>
+
 ### Question 8: Inline Member Functions
 *Explain the advantages and disadvantages of using inline member functions. Provide an example of when it would be appropriate to use an inline member function.*
+
+<details>
+  <summary>Answer</summary>
+  **Advantages:**
+  - Reduced function call overhead.
+  - Better performance for small functions.
+  
+  **Disadvantages:**
+  - Increased binary size.
+  - Compiler may ignore inline request.
+
+  **Example:**
+  ```cpp
+  class MyClass {
+  public:
+      inline void myFunction() {
+          // Small function logic
+      }
+  };
+  ```
+</details>
 
 ### Question 9: Arrays of Objects
 *What will be the output of the following program?*
@@ -260,12 +356,15 @@ int main() {
 }
 ```
 
-   A. Hammer: 10 Wrench: 5 Pliers: 7  
-   B. Hammer: 10 Wrench: 5 Pliers: 0  
-   C. Compilation error due to array initialization  
-   D. Hammer: 10 Wrench: 5 Pliers: 7 plus additional uninitialized values
-```
+A. Hammer: 10 Wrench: 5 Pliers: 7  
+B. Hammer: 10 Wrench: 5 Pliers: 0  
+C. Compilation error due to array initialization  
+D. Hammer: 10 Wrench: 5 Pliers: 7 plus additional uninitialized values
 
+<details>
+  <summary>Answer</summary>
+  A. Hammer: 10 Wrench: 5 Pliers: 7
+</details>
 
 ### Question 10
 **What is the output of the following program?**
@@ -291,10 +390,17 @@ int main() {
     return 0;
 }
 ```
-   A. 0.0  
-   **B. 5.0**  
-   C. Compilation error  
-   D. Runtime error
+A. 0.0  
+B. 5.0
+
+  
+C. Compilation error  
+D. Runtime error
+
+<details>
+  <summary>Answer</summary>
+  B. 5.0
+</details>
 
 ### Question 11
 **Which of the following is a valid way to declare an object of class `Car`?**
@@ -305,10 +411,15 @@ public:
     Car() {}
 };
 ```
-   A. `Car car;`  
-   **B. `Car car = Car();`**  
-   C. `Car car();`  
-   D. `Car;`
+A. `Car car;`  
+B. `Car car = Car();`  
+C. `Car car();`  
+D. `Car;`
+
+<details>
+  <summary>Answer</summary>
+  B. `Car car = Car();`
+</details>
 
 ### Question 12
 **What will be the output of the following program?**
@@ -334,18 +445,28 @@ int main() {
     return 0;
 }
 ```
-   A. 18  
-   B. 19  
-   **C. 20**  
-   D. Compilation error
+A. 18  
+B. 19  
+C. 20  
+D. Compilation error
+
+<details>
+  <summary>Answer</summary>
+  C. 20
+</details>
 
 ### Question 13
 **Which of the following access specifiers allows a class member to be accessed outside the class?**
 
-   **A. public**  
-   B. private  
-   C. protected  
-   D. internal
+A. public  
+B. private  
+C. protected  
+D. internal
+
+<details>
+  <summary>Answer</summary>
+  A. public
+</details>
 
 ### Question 14
 **What will happen if we attempt to compile the following code?**
@@ -371,10 +492,15 @@ int main() {
     return 0;
 }
 ```
-   A. 0  
-   B. 10  
-   **C. Compilation error**  
-   D. Runtime error
+A. 0  
+B. 10  
+C. Compilation error  
+D. Runtime error
+
+<details>
+  <summary>Answer</summary>
+  C. Compilation error
+</details>
 
 ### Question 15
 **What is the output of the following program?**
@@ -407,10 +533,15 @@ int main() {
     return 0;
 }
 ```
-   A. 0  
-   B. 1  
-   **C. 2**  
-   D. 3
+A. 0  
+B. 1  
+C. 2  
+D. 3
+
+<details>
+  <summary>Answer</summary>
+  C. 2
+</details>
 
 ### Question 16
 **What does the following code do?**
@@ -439,18 +570,28 @@ int main() {
     return 0;
 }
 ```
-   A. Prints an empty string  
-   B. Compilation error  
-   **C. Prints "John"**  
-   D. Runtime error
+A. Prints an empty string  
+B. Compilation error  
+C. Prints "John"  
+D. Runtime error
+
+<details>
+  <summary>Answer</summary>
+  C. Prints "John"
+</details>
 
 ### Question 17
 **Which keyword is used to define a member function that cannot modify the object's data members?**
 
-   **A. const**  
-   B. static  
-   C. inline  
-   D. friend
+A. const  
+B. static  
+C. inline  
+D. friend
+
+<details>
+  <summary>Answer</summary>
+  A. const
+</details>
 
 ### Question 18
 **What will be the output of the following code?**
@@ -471,10 +612,15 @@ int main() {
     return 0;
 }
 ```
-   **A. Constructor called**  
-   B. No output  
-   C. Compilation error  
-   D. Runtime error
+A. Constructor called  
+B. No output  
+C. Compilation error  
+D. Runtime error
+
+<details>
+  <summary>Answer</summary>
+  A. Constructor called
+</details>
 
 ### Question 19
 **Which of the following is NOT a valid way to access members of an object using a pointer?**
@@ -486,10 +632,15 @@ public:
     void setX(int val) { x = val; }
 };
 ```
-   A. `Sample *ptr = new Sample; ptr->x = 5;`  
-   **B. `Sample *ptr = new Sample; ptr.x = 5;`**  
-   C. `Sample *ptr = new Sample; ptr->setX(5);`  
-   D. `Sample obj; Sample *ptr = &obj; ptr->x = 5;`
+A. `Sample *ptr = new Sample; ptr->x = 5;`  
+B. `Sample *ptr = new Sample; ptr.x = 5;`  
+C. `Sample *ptr = new Sample; ptr->setX(5);`  
+D. `Sample obj; Sample *ptr = &obj; ptr->x = 5;`
+
+<details>
+  <summary>Answer</summary>
+  B. `Sample *ptr = new Sample; ptr.x = 5;`
+</details>
 
 ### Question 20
 **What will be the output of the following program?**
@@ -515,48 +666,66 @@ int main() {
     return 0;
 }
 ```
-   A. Area: 0.0  
-   **B. Area: 25.0**  
-   C. Compilation error  
-   D. Runtime error
+A. Area: 0.0  
+B. Area: 25.0  
+C. Compilation error  
+D. Runtime error
+
+<details>
+  <summary>Answer</summary>
+  B. Area: 25.0
+</details>
 
 ### Question 21
 **Which of the following is the correct syntax for defining a class with a private member and a public member function?**
 
-   **A.**
-   ```cpp
-   class MyClass {
-   private:
-       int x;
-   public:
-       void setX(int val) { x = val; }
-   };
-   ```
-   B. 
-   ```cpp
-   class MyClass {
-   public:
-       int x;
-   private:
-       void setX(int val) { x = val; }
-   };
-   ```
-   C. 
-   ```cpp
-   class MyClass {
-   int x;
-   void setX(int val) { x = val; }
-   };
-   ```
-   D. 
-   ```cpp
-   class MyClass {
-   private:
-       void setX(int val) { x = val; }
-   public:
-       int x;
-   };
-   ```
+A.
+```cpp
+class MyClass {
+private:
+    int x;
+public:
+    void setX(int val) { x = val; }
+};
+```
+B.
+```cpp
+class MyClass {
+public:
+    int x;
+private:
+    void setX(int val) { x = val; }
+};
+```
+C.
+```cpp
+class MyClass {
+int x;
+void setX(int val) { x = val; }
+};
+```
+D.
+```cpp
+class MyClass {
+private:
+    void setX(int val) { x = val; }
+public:
+    int x;
+};
+```
+
+<details>
+  <summary>Answer</summary>
+  A.
+  ```cpp
+  class MyClass {
+  private:
+      int x;
+  public:
+      void setX(int val) { x = val; }
+  };
+  ```
+</details>
 
 ### Question 22
 **Which of the following correctly declares an object `myObj` of class `Sample` and initializes it using a parameterized constructor?**
@@ -567,10 +736,15 @@ public:
     Sample(int val) {}
 };
 ```
-   A. `Sample myObj();`  
-   B. `Sample myObj = Sample();`  
-   **C. `Sample myObj(10);`**  
-   D. `Sample myObj = 10;`
+A. `Sample myObj();`  
+B. `Sample myObj = Sample();`  
+C. `Sample myObj(10);`  
+D. `Sample myObj = 10;`
+
+<details>
+  <summary>Answer</summary>
+  C. `Sample myObj(10);`
+</details>
 
 ### Question 23
 **What will happen if we attempt to compile the following program?**
@@ -595,18 +769,28 @@ int main() {
     return 0;
 }
 ```
-   **A. Constructor called Destructor called**  
-   B. Constructor called  
-   C. Destructor called  
-   D. Compilation error
+A. Constructor called Destructor called  
+B. Constructor called  
+C. Destructor called  
+D. Compilation error
+
+<details>
+  <summary>Answer</summary>
+  A. Constructor called Destructor called
+</details>
 
 ### Question 24
 **Which of the following is true about constructors in C++?**
 
-   A. Constructors cannot have parameters.  
-   **B. Constructors are automatically called when an object is created.**  
-   C. Constructors can be called explicitly.  
-   D. Constructors must have a return type.
+A. Constructors cannot have parameters.  
+B. Constructors are automatically called when an object is created.  
+C. Constructors can be called explicitly.  
+D. Constructors must have a return type.
+
+<details>
+  <summary>Answer</summary>
+  B. Constructors are automatically called when an object is created.
+</details>
 
 ### Question 25
 **What will be the output of the following program?**
@@ -632,18 +816,28 @@ int main() {
     return 0;
 }
 ```
-   A. Value: 0  
-   B. Value: 10  
-   **C. Value: 42**  
-   D. Compilation error
+A. Value: 0  
+B. Value: 10  
+C. Value: 42  
+D. Compilation error
+
+<details>
+  <summary>Answer</summary>
+  C. Value: 42
+</details>
 
 ### Question 26
 **What is the default access specifier for members of a class if not explicitly specified?**
 
-   A. public  
-   **B. private**  
-   C. protected  
-   D. internal
+A. public  
+B. private  
+C. protected  
+D. internal
+
+<details>
+  <summary>Answer</summary>
+  B. private
+</details>
 
 ### Question 27
 **Which of the following correctly initializes an object using the default constructor?**
@@ -654,10 +848,17 @@ public:
     Item() {}
 };
 ```
-   A. `Item item = Item();`  
-   **B. `Item item;`**  
-   C. `Item item();`  
-   D. `Item();`
+A. `Item item = Item();`  
+B. `Item item;`  
+C. `Item item();`  
+D. `Item();`
+
+<details>
+  <summary>Answer
+
+</summary>
+  B. `Item item;`
+</details>
 
 ### Question 28
 **What will be the output of the following program?**
@@ -694,20 +895,28 @@ int main() {
     return 0;
 }
 ```
-   A. 0  
-   **B. 1**  
-   C. 2  
-   D. 3
+A. 0  
+B. 1  
+C. 2  
+D. 3
+
+<details>
+  <summary>Answer</summary>
+  B. 1
+</details>
 
 ### Question 29
-**
+**Which keyword is used to prevent a member function from modifying the state of an object?**
 
-Which keyword is used to prevent a member function from modifying the state of an object?**
+A. static  
+B. const  
+C. inline  
+D. friend
 
-   A. static  
-   **B. const**  
-   C. inline  
-   D. friend
+<details>
+  <summary>Answer</summary>
+  B. const
+</details>
 
 ### Question 30
 **What will be the output of the following program?**
@@ -735,10 +944,15 @@ int main() {
     return 0;
 }
 ```
-   A. 0, 0  
-   B. 10, 10  
-   **C. 0, 10**  
-   D. Compilation error
+A. 0, 0  
+B. 10, 10  
+C. 0, 10  
+D. Compilation error
+
+<details>
+  <summary>Answer</summary>
+  C. 0, 10
+</details>
 
 ### Question 31
 **What will be the output of the following program?**
@@ -768,18 +982,28 @@ int main() {
     return 0;
 }
 ```
-   A. 0  
-   B. 10  
-   **C. 100**  
-   D. Compilation error
+A. 0  
+B. 10  
+C. 100  
+D. Compilation error
+
+<details>
+  <summary>Answer</summary>
+  C. 100
+</details>
 
 ### Question 32
 **Which of the following is true about destructors in C++?**
 
-   A. Destructors can be overloaded.  
-   B. Destructors have a return type.  
-   **C. Destructors are called when an object goes out of scope.**  
-   D. Destructors can take arguments.
+A. Destructors can be overloaded.  
+B. Destructors have a return type.  
+C. Destructors are called when an object goes out of scope.  
+D. Destructors can take arguments.
+
+<details>
+  <summary>Answer</summary>
+  C. Destructors are called when an object goes out of scope.
+</details>
 
 ### Question 33
 **What will be the output of the following program?**
@@ -809,10 +1033,15 @@ int main() {
     return 0;
 }
 ```
-   A. 0  
-   **B. 50**  
-   C. 100  
-   D. Compilation error
+A. 0  
+B. 50  
+C. 100  
+D. Compilation error
+
+<details>
+  <summary>Answer</summary>
+  B. 50
+</details>
 
 ### Question 34
 **What is the correct way to define a member function outside the class definition?**
@@ -826,30 +1055,40 @@ public:
     void setRadius(double r);
 };
 ```
-   **A.**
-   ```cpp
-   void Circle::setRadius(double r) {
-       radius = r;
-   }
-   ```
-   B. 
-   ```cpp
-   void setRadius(Circle::double r) {
-       radius = r;
-   }
-   ```
-   C. 
-   ```cpp
-   void Circle::setRadius(double radius) {
-       this->radius = radius;
-   }
-   ```
-   D. 
-   ```cpp
-   void setRadius(Circle r) {
-       radius = r;
-   }
-   ```
+A.
+```cpp
+void Circle::setRadius(double r) {
+    radius = r;
+}
+```
+B.
+```cpp
+void setRadius(Circle::double r) {
+    radius = r;
+}
+```
+C.
+```cpp
+void Circle::setRadius(double radius) {
+    this->radius = radius;
+}
+```
+D.
+```cpp
+void setRadius(Circle r) {
+    radius = r;
+}
+```
+
+<details>
+  <summary>Answer</summary>
+  A.
+  ```cpp
+  void Circle::setRadius(double r) {
+      radius = r;
+  }
+  ```
+</details>
 
 ### Question 35
 **What will be the output of the following program?**
@@ -879,13 +1118,15 @@ int main() {
     return 0;
 }
 ```
-   A. 0  
-   **B. 75**  
-   C. 100  
-   D. Compilation error
-
+A. 0  
+B. 75  
+C. 100  
+D. Compilation error
 
 <details>
   <summary>Answer</summary>
-  A. Hammer: 10 Wrench: 5 Pliers: 7
+  B. 75
 </details>
+```
+
+You can copy and paste this content into an `.md` file to create a properly formatted Markdown document with spoilers hiding the answers.
